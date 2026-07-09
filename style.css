@@ -8,6 +8,7 @@
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 15px 4px;
 }
 
 .btn {
@@ -18,7 +19,7 @@
   display: inline-block;
   border: none;
   border-radius: 10px;
-  transition-duration: 0.5s;
+  transition-duration: 0.5s ease;
 }
 .btn:hover {
   background-color: #263d7e;
@@ -26,7 +27,14 @@
   cursor: pointer;
 }
 
-/* nav style */
+/* nav style start*/
+
+.nav-parent {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
+}
 
 nav {
   display: flex;
@@ -54,10 +62,102 @@ nav {
 .nav-link ul li a:hover {
   text-decoration: underline;
   color: #1d4ed8;
-  transition-duration: 0.3s;
+  transition-duration: 0.3s ease;
 }
 
 .logo {
   width: 134px;
   height: 44px;
+}
+
+/* Nav style end */
+
+/* Banner style start */
+
+header {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('./assets/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.banner h1 {
+  color: #ffffff;
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.banner p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 22px;
+  max-width: 700px;
+  line-height: 1.4;
+}
+.banner-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  transform: translateX(-50%);
+}
+
+/* Banner style end */
+
+/* speakers section start */
+.speakers-parent {
+  margin-top: 50px;
+}
+
+.speakers-parent .speakers-title {
+  text-align: center;
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.speakers-card {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.card .bio {
+  padding: 24px;
+}
+.card .bio :first-child {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 600;
+}
+.card .bio h1 {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.card .bio :last-child {
+  margin-top: 8px;
+  color: #575757;
+  font-size: 14px;
+  font-weight: 400;
 }
