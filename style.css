@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Common style  */
 .container {
   max-width: 1280px;
@@ -19,7 +23,7 @@
   display: inline-block;
   border: none;
   border-radius: 10px;
-  transition-duration: 0.5s ease;
+  transition: all 0.3s ease;
 }
 .btn:hover {
   background-color: #263d7e;
@@ -58,11 +62,11 @@ nav {
   text-decoration: none;
   color: #575757;
   font-size: 16px;
+  transition-duration: 0.3s ease;
 }
 .nav-link ul li a:hover {
   text-decoration: underline;
   color: #1d4ed8;
-  transition-duration: 0.3s ease;
 }
 
 .logo {
@@ -117,9 +121,10 @@ header {
 
 .speakers-parent .speakers-title {
   text-align: center;
-  font-size: 46px;
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: #0d1b2a;
 }
 
 .speakers-card {
@@ -135,12 +140,17 @@ header {
   border: 1px solid #e5e7eb;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: box-shadow 0.6s ease;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card img {
   width: 100%;
   height: 100%;
   border-radius: 20px 20px 0px 0px;
+  background-size: cover;
 }
 .card .bio {
   padding: 24px;
@@ -154,10 +164,168 @@ header {
   margin-top: 8px;
   font-size: 20px;
   font-weight: 700;
+  color: #0d1b2a;
 }
 .card .bio :last-child {
   margin-top: 8px;
   color: #575757;
   font-size: 14px;
   font-weight: 400;
+}
+/* speakers section end */
+
+/* Secure Your Spot (Pricing) Section start*/
+
+.pricing-section {
+  margin-top: 40px;
+}
+
+.pricing-header h1 {
+  text-align: center;
+  font-size: 46px;
+  font-weight: 600;
+  color: #0d1b2a;
+}
+.pricing-header p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #575757;
+  margin-top: 8px;
+}
+
+.pricing-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 55px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.feature-dot {
+  width: 5px;
+  height: 5px;
+  color: #1d4ed8;
+  border-radius: 24px;
+  background-color: #1d4ed8;
+}
+
+.pricing-card {
+  width: 370px;
+  height: 454px;
+  border: 1px solid #e5e7eb;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.pricing-card-header h3 {
+  font-size: 13px;
+  color: #888888;
+  font-weight: 600;
+}
+.pricing-card-header h1 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #0d1b2a;
+  margin-top: 15px;
+}
+.pricing-card-header p {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+  margin: 20px 0;
+}
+.feature-item {
+  margin-top: 10px;
+}
+
+.feature-item p {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* pricing card style */
+.standard-card-btn {
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  padding: 16px;
+  margin-top: 12px;
+  border: 1px solid #2563eb;
+  border-radius: 10px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.standard-card-btn:hover {
+  cursor: pointer;
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.pro-card-btn {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  padding: 16px;
+  margin-top: 12px;
+  /* border: 1px solid #2563eb; */
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  transition: all 0.3s ease;
+}
+.pro-card-btn:hover {
+  cursor: pointer;
+  background-color: #0b35c0;
+}
+.team-card-btn {
+  color: #0d1b2a;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  padding: 16px;
+  margin-top: 12px;
+  border: 1px solid #0d1b2a;
+  border-radius: 10px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.team-card-btn:hover {
+  cursor: pointer;
+  background-color: rgba(216, 216, 216, 0.945);
+}
+
+/* center card background color */
+
+.pro-plan {
+  background-color: #0d1b2a;
+}
+.pro-plan .pricing-card-header h3 {
+  color: #93c5fd;
+}
+.pro-plan .pricing-card-header h1 {
+  color: #ffffff;
+}
+.pro-plan .pricing-card-header p {
+  color: #848d95;
+}
+.pro-plan .pricing-features p {
+  color: #cfd1d4;
 }
