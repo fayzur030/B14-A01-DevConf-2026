@@ -99,7 +99,7 @@ header {
   margin-bottom: 20px;
 }
 .banner p {
-  color: #ffffff;
+  color: #e6e6e6;
   text-align: center;
   font-size: 22px;
   max-width: 780px;
@@ -160,6 +160,7 @@ header {
   color: #2563eb;
   font-size: 12px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .card .bio h1 {
   margin-top: 8px;
@@ -217,7 +218,7 @@ header {
 
 .pricing-card {
   width: 370px;
-  height: 454px;
+  height: auto;
   border: 1px solid #e5e7eb;
   padding: 32px;
   background-color: #ffffff;
@@ -237,6 +238,7 @@ header {
   font-size: 13px;
   color: #888888;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .pricing-card-header h1 {
   font-size: 44px;
@@ -248,6 +250,7 @@ header {
   font-size: 13px;
   font-weight: 400;
   margin-top: 8px;
+  color: #888888;
 }
 
 hr {

@@ -1,7 +1,5 @@
 I am a beginner learning HTML and CSS.
-
 Help me create a modern "DevConf AI Hackathon" section for my assignment. The section will be placed below the Pricing section of a developer conference landing page.
-
 Please keep the code simple, clean, and easy for a beginner to understand.
 
 Requirements:
@@ -23,13 +21,12 @@ Website Style:
 - Rounded corners
 - Soft shadows
 - Plenty of whitespace
-- Modern SaaS/developer conference design
 - Maximum container width around 1200–1280px
 
 Section Content:
 
 Small Badge:
- AI Challenge
+AI Challenge
 
 Main Heading:
 DevConf AI Hackathon 2026
