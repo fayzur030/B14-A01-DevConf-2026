@@ -234,19 +234,20 @@ header {
   transform: translateY(-3px);
 }
 
-.pricing-card-header h3 {
+.card-type {
   font-size: 13px;
   color: #888888;
   font-weight: 600;
   text-transform: uppercase;
 }
-.pricing-card-header h1 {
+
+.price {
   font-size: 44px;
   font-weight: 800;
   color: #0d1b2a;
   margin-top: 15px;
 }
-.pricing-card-header p {
+.per-text {
   font-size: 13px;
   font-weight: 400;
   margin-top: 8px;
